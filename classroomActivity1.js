@@ -1,16 +1,26 @@
+//Classromm Activity on DataTypes
 
-var firstName="Suganyaa"
+//String
+const firstName="Suganyaa"
 console.log(firstName);
 console.log(typeof firstName);
-var companyName="WIPRO TECHNOLOGIES"
+
+//String
+const companyName="WIPRO TECHNOLOGIES"
 console.log(companyName);
 console.log(typeof companyName);
-var mobileNumber=9876543210
+
+//Number
+const mobileNumber=9876543210
 console.log(mobileNumber);
 console.log(typeof mobileNumber);
+
+//BOOLEAN
 var isAutomation=true
 console.log(isAutomation);
 console.log(typeof isAutomation);
-var hasPlaywright
+
+//BOOLEAN
+let hasPlaywright=false
 console.log(hasPlaywright);
 console.log(typeof hasPlaywright);
