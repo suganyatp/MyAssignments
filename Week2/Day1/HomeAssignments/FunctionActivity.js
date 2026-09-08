@@ -1,10 +1,10 @@
 // Task1: Function Declaration
 
-function userProfile() {
+function userProfile(name) {
     let name = "Suganyaa"
     console.log("Hello,", name, "!"); //Hello, Suganyaa !
 }
-userProfile()
+userProfile("Suganyaa")
 
 // Task2: Arrow Function
 
