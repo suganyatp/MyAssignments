@@ -7,7 +7,12 @@ This repository contains my Classroom Activities given during the Breakout time.
   - Day1 → Basics of JavaScript
   - Day2 → Data Types
   - Day3 → Functions, Operators, Scoping, Conditions Statements
-  - Day4 -> 
+  - Day4 -> Strings Activity
+    - Home Assignments: Palindrome, Anagram
+
+- **Week2**
+  - Day1 -> Function types, Arrays
+    - Home Assignments: Function types
 
 ## 🚀 How to Navigate
 - Each folder corresponds to a **week** of practice.
