@@ -19,7 +19,7 @@ http://leaftaps.com/opentaps/control/main
 
 import {test} from "@playwright/test"
 
-test('Create a Lead using CSS Selectors',async ({page}) => {
+test('Edit Lead using CSS Selectors',async ({page}) => {
     
 await page.goto("https://leaftaps.com/opentaps/control/main") //1
 
