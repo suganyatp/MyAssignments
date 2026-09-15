@@ -12,7 +12,7 @@ Test Steps:
 
 import {test} from "@playwright/test"
 
-test('Creating Lead from SalesForce URL', async ({page}) => {
+test('Creating Individual from SalesForce URL', async ({page}) => {
 
     await page.goto("https://login.salesforce.com")
 
