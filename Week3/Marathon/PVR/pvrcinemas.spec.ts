@@ -8,14 +8,6 @@ test ('Verify dynamic movie ticket booking flow in PVR Cinemas website', async (
     //1 and 2 - Launch and Navigate
     await page.goto('https://www.pvrcinemas.com/', {waitUntil: "domcontentloaded"})
 
-  /*   // Dismissing the pop-up in the Home Page 
-    await page.waitForTimeout(1000) // let any delayed popup render
-    const fbPopup = page.locator('//div[contains(text(),"ORDER F&B") or contains(text(),"Curated Shows")]')
-    if (await fbPopup.first().isVisible({ timeout: 2000 }).catch(() => false)) {
-    // Try pressing Escape, or look for a close (×) button near it
-    await page.keyboard.press('Escape').catch(() => {})
-    } */
-
     //3. Select required city
     await page.locator('//div[@class="cities-show"]').click()
     const selectCity = page.locator('//div[@class="cities-names"]').filter({hasText: "Chennai"})
