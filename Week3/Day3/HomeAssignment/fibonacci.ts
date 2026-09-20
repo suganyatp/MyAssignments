@@ -1,6 +1,6 @@
 //Fibonacci Series
 
-function fibonacci(n: number): {
+function fibonacci(n: number): number {
     if (n < 0) {
         console.log("The number should be non-negative interger");        
     }
