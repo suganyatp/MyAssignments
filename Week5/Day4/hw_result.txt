@@ -1,0 +1,30 @@
+Output Result - 
+//FROM BASE CLASS
+
+suganyaapari@Suganyaa-Pari-MacBook-Air Day4 % npx tsx HW-accessModifier.ts          
+************************************
+The Account Number : 100098654321
+The Account Holer Name : Ramesh Kumar
+The Outstanding Balance : 1234780
+Balance before Account deposit / withdraw :  1234780
+The amount deposited is :  10000
+10000 Deposited. Balance after deposit is 1244780
+20000 Withdrawn. Balance after withdraw is 1224780
+Available Balance :  1224780
+************************************
+suganyaapari@Suganyaa-Pari-MacBook-Air Day4 % 
+
+//FROM CHILD CLASS
+suganyaapari@Suganyaa-Pari-MacBook-Air Day4 % npx tsx HW-accessModifierChildClass.ts
+************************************
+The Account Number : 100098654321
+The Account Holer Name : Ramesh Kumar
+The Outstanding Balance : 1234780
+Balance before Account deposit / withdraw :  1234780
+The amount deposited is :  10000
+10000 Deposited. Balance after deposit is 1244780
+20000 Withdrawn. Balance after withdraw is 1224780
+Available Balance :  1224780
+************************************
+Account Holder Name :  Ramesh Kumar
+suganyaapari@Suganyaa-Pari-MacBook-Air Day4 %
