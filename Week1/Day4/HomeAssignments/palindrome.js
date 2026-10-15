@@ -1,7 +1,5 @@
 // String Manipulations -> To reverse a String and check Palindrome
 
-const { join } = require("path");
-
 function palindromeCheck(str) {
     
     console.log(`Given String is : ${str}`);
