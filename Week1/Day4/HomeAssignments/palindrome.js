@@ -3,7 +3,7 @@
 function palindromeCheck(str) {
     
     console.log(`Given String is : ${str}`);
-    //reverse the given string
+    //clean the given str
     let cleanStr = str.toLowerCase().replace(/[^a-z0-9]/g, "")
 
     console.log(`After joining the given string :  ${cleanStr}`);
