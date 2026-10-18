@@ -1,0 +1,112 @@
+% npx playwright test SalesForce-Contact-API.spec.ts
+
+Running 5 tests using 1 worker
+
+     1 SalesForce-Contact-API.spec.ts:16:9 › Salesforce Case CRUD using Playwright API - Serial mode › 1_Sales Force Access-Token generation
+{
+  access_token: '00Dg800000N9lEG!AQEAQFVjul0K5ramgN3NXJwGLb7mQvLgILNcB8gaj3R28Lj4xCRIeqrzjBlJrcsZ6ssT_zdK8PglyFsLHVgC1XldXAoDDNp1',
+  signature: 'uV67gQqf3yc1HMFTGEfUxtMn37rzfnUDwm7LH2b6gqA=',
+  scope: 'cdp_ingest_api custom_permissions cdp_segment_api content cdp_api chatbot_api cdp_identityresolution_api interaction_api wave_api einstein_gpt_api cdp_calculated_insight_api data_cloud_user_claims api id eclair_api pardot_api lightning visualforce cdp_query_api sfap_api openid semantic_layer_api cmdb_discovery_api scrt_api cdp_profile_api pwdless_login_api user_registration_api mcp_api chatter_api a2a_api forgot_password',
+  instance_url: 'https://orgfarm-02ae27e8c2-dev-ed.develop.my.salesforce.com',
+  id: 'https://login.salesforce.com/id/00Dg800000N9lEGEAZ/005g800000CO52sAAD',
+  token_type: 'Bearer',
+  issued_at: '1792318484683',
+  api_instance_url: 'https://api.salesforce.com'
+}
+200
+OK
+00Dg800000N9lEG!AQEAQFVjul0K5ramgN3NXJwGLb7mQvLgILNcB8gaj3R28Lj4xCRIeqrzjBlJrcsZ6ssT_zdK8PglyFsLHVgC1XldXAoDDNp1
+Bearer
+https://orgfarm-02ae27e8c2-dev-ed.develop.my.salesforce.com
+  ✓  1 …ce-Contact-API.spec.ts:16:9 › Salesforce Case CRUD using Playwright API - Serial mode › 1_Sales Force Access-Token generation (590ms)
+  ✓  2 …lesForce-Contact-API.spec.ts:59:9 › Salesforce Case CRUD using Playwright API - Serial mode › 2_Create Contact in Sales Force (724ms)
+{ id: '003g800000sYz4TAAS', success: true, errors: [] }
+201
+Created
+003g800000sYz4TAAS
+     3 SalesForce-Contact-API.spec.ts:93:9 › Salesforce Case CRUD using Playwright API - Serial mode › 3_Get Contact in Sales Force
+{
+  attributes: {
+    type: 'Contact',
+    url: '/services/data/v65.0/sobjects/Contact/003g800000sYz4TAAS'
+  },
+  Id: '003g800000sYz4TAAS',
+  IsDeleted: false,
+  MasterRecordId: null,
+  AccountId: null,
+  LastName: 'Kumari',
+  FirstName: null,
+  Salutation: 'Mrs.',
+  Name: 'Kumari',
+  OtherStreet: null,
+  OtherCity: null,
+  OtherState: null,
+  OtherPostalCode: null,
+  OtherCountry: null,
+  OtherStateCode: null,
+  OtherCountryCode: null,
+  OtherLatitude: null,
+  OtherLongitude: null,
+  OtherGeocodeAccuracy: null,
+  OtherAddress: null,
+  MailingStreet: null,
+  MailingCity: null,
+  MailingState: null,
+  MailingPostalCode: null,
+  MailingCountry: null,
+  MailingStateCode: null,
+  MailingCountryCode: null,
+  MailingLatitude: null,
+  MailingLongitude: null,
+  MailingGeocodeAccuracy: null,
+  MailingAddress: null,
+  Phone: null,
+  Fax: null,
+  MobilePhone: null,
+  HomePhone: null,
+  OtherPhone: null,
+  AssistantPhone: null,
+  ReportsToId: null,
+  Email: null,
+  Title: null,
+  Department: null,
+  AssistantName: null,
+  LeadSource: null,
+  Birthdate: null,
+  Description: null,
+  OwnerId: '005g800000CO52sAAD',
+  CreatedDate: '2026-10-18T10:14:45.000+0000',
+  CreatedById: '005g800000CO52sAAD',
+  LastModifiedDate: '2026-10-18T10:14:45.000+0000',
+  LastModifiedById: '005g800000CO52sAAD',
+  SystemModstamp: '2026-10-18T10:14:45.000+0000',
+  LastActivityDate: null,
+  LastCURequestDate: null,
+  LastCUUpdateDate: null,
+  LastViewedDate: '2026-10-18T10:14:45.000+0000',
+  LastReferencedDate: '2026-10-18T10:14:45.000+0000',
+  EmailBouncedReason: null,
+  EmailBouncedDate: null,
+  IsEmailBounced: false,
+  PhotoUrl: '/services/images/photo/003g800000sYz4TAAS',
+  Jigsaw: null,
+  JigsawContactId: null,
+  CleanStatus: 'Pending',
+  IndividualId: null,
+  IsPriorityRecord: false,
+  ContactSource: null,
+  Level__c: null,
+  Languages__c: null
+}
+200
+OK
+  ✓  3 SalesForce-Contact-API.spec.ts:93:9 › Salesforce Case CRUD using Playwright API - Serial mode › 3_Get Contact in Sales Force (400ms)
+  ✓  4 …-Contact-API.spec.ts:118:9 › Salesforce Case CRUD using Playwright API - Serial mode › 4_Update Contact record in Sales Force (486ms)
+204
+No Content
+  ✓  5 …Force-Contact-API.spec.ts:146:9 › Salesforce Case CRUD using Playwright API - Serial mode › 5_Delete Contact from Sales Force (882ms)
+204
+No Content
+
+  5 passed (3.5s)
+suganyaapari@Suganyaa-Pari-MacBook-Air HW % 
