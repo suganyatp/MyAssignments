@@ -1,0 +1,115 @@
+% npx playwright test SalesForce-Account-API.spec.ts
+
+Running 5 tests using 1 worker
+
+     1 …lesForce-Account-API.spec.ts:16:9 › Salesforce Account CRUD using Playwright API - Serial mode › 1_Sales Force Access-Token generation
+{
+  access_token: '00Dg800000N9lEG!AQEAQG8VTa0my5y7t2wzMpBOy4J8PKKS1bfTv9vEtsBkrWeKjFch9THFLSuMhY4BHRWTzy9qdd8BCHPreOSjPeOuOeKVb7oD',
+  signature: 'C1WzpFg+PmX8FmV1PF1BDrulg+lzHdPmAd391E9dG7g=',
+  scope: 'cdp_ingest_api custom_permissions cdp_segment_api cdp_api content cdp_identityresolution_api chatbot_api interaction_api wave_api cdp_calculated_insight_api einstein_gpt_api data_cloud_user_claims api id eclair_api pardot_api lightning visualforce cdp_query_api sfap_api semantic_layer_api openid cmdb_discovery_api scrt_api cdp_profile_api user_registration_api pwdless_login_api chatter_api mcp_api a2a_api forgot_password',
+  instance_url: 'https://orgfarm-02ae27e8c2-dev-ed.develop.my.salesforce.com',
+  id: 'https://login.salesforce.com/id/00Dg800000N9lEGEAZ/005g800000CO52sAAD',
+  token_type: 'Bearer',
+  issued_at: '1792322831301',
+  api_instance_url: 'https://api.salesforce.com'
+}
+200
+OK
+00Dg800000N9lEG!AQEAQG8VTa0my5y7t2wzMpBOy4J8PKKS1bfTv9vEtsBkrWeKjFch9THFLSuMhY4BHRWTzy9qdd8BCHPreOSjPeOuOeKVb7oD
+Bearer
+https://orgfarm-02ae27e8c2-dev-ed.develop.my.salesforce.com
+  ✓  1 …-Account-API.spec.ts:16:9 › Salesforce Account CRUD using Playwright API - Serial mode › 1_Sales Force Access-Token generation (614ms)
+  ✓  2 …sForce-Account-API.spec.ts:59:9 › Salesforce Account CRUD using Playwright API - Serial mode › 2_Create Account in Sales Force (926ms)
+{ id: '001g8000013pv6tAAA', success: true, errors: [] }
+201
+Created
+001g8000013pv6tAAA
+     3 SalesForce-Account-API.spec.ts:92:9 › Salesforce Account CRUD using Playwright API - Serial mode › 3_Get Account in Sales Force
+{
+  attributes: {
+    type: 'Account',
+    url: '/services/data/v64.0/sobjects/Account/001g8000013pv6tAAA'
+  },
+  Id: '001g8000013pv6tAAA',
+  IsDeleted: false,
+  MasterRecordId: null,
+  Name: 'Suganyaa Parivallal',
+  Type: null,
+  ParentId: null,
+  BillingStreet: null,
+  BillingCity: null,
+  BillingState: null,
+  BillingPostalCode: null,
+  BillingCountry: null,
+  BillingStateCode: null,
+  BillingCountryCode: null,
+  BillingLatitude: null,
+  BillingLongitude: null,
+  BillingGeocodeAccuracy: null,
+  BillingAddress: null,
+  ShippingStreet: null,
+  ShippingCity: null,
+  ShippingState: null,
+  ShippingPostalCode: null,
+  ShippingCountry: null,
+  ShippingStateCode: null,
+  ShippingCountryCode: null,
+  ShippingLatitude: null,
+  ShippingLongitude: null,
+  ShippingGeocodeAccuracy: null,
+  ShippingAddress: null,
+  Phone: null,
+  Fax: null,
+  AccountNumber: null,
+  Website: null,
+  PhotoUrl: '/services/images/photo/001g8000013pv6tAAA',
+  Sic: null,
+  Industry: null,
+  AnnualRevenue: null,
+  NumberOfEmployees: null,
+  Ownership: null,
+  TickerSymbol: null,
+  Description: null,
+  Rating: null,
+  Site: null,
+  OwnerId: '005g800000CO52sAAD',
+  CreatedDate: '2026-10-18T11:27:12.000+0000',
+  CreatedById: '005g800000CO52sAAD',
+  LastModifiedDate: '2026-10-18T11:27:12.000+0000',
+  LastModifiedById: '005g800000CO52sAAD',
+  SystemModstamp: '2026-10-18T11:27:12.000+0000',
+  LastActivityDate: null,
+  LastViewedDate: '2026-10-18T11:27:12.000+0000',
+  LastReferencedDate: '2026-10-18T11:27:12.000+0000',
+  Jigsaw: null,
+  JigsawCompanyId: null,
+  CleanStatus: 'Pending',
+  AccountSource: null,
+  DunsNumber: null,
+  Tradestyle: null,
+  NaicsCode: null,
+  NaicsDesc: null,
+  YearStarted: null,
+  SicDesc: null,
+  DandbCompanyId: null,
+  OperatingHoursId: null,
+  CustomerPriority__c: null,
+  SLA__c: null,
+  Active__c: null,
+  NumberofLocations__c: null,
+  UpsellOpportunity__c: null,
+  SLASerialNumber__c: null,
+  SLAExpirationDate__c: null
+}
+200
+OK
+  ✓  3 SalesForce-Account-API.spec.ts:92:9 › Salesforce Account CRUD using Playwright API - Serial mode › 3_Get Account in Sales Force (406ms)
+  ✓  4 …ccount-API.spec.ts:117:9 › Salesforce Account CRUD using Playwright API - Serial mode › 4_Update Account record in Sales Force (571ms)
+204
+No Content
+  ✓  5 …orce-Account-API.spec.ts:144:9 › Salesforce Account CRUD using Playwright API - Serial mode › 5_Delete Account from Sales Force (1.8s)
+204
+No Content
+
+  5 passed (4.7s)
+suganyaapari@Suganyaa-Pari-MacBook-Air HW %
