@@ -1,0 +1,144 @@
+% npx playwright test case.spec.ts                  
+
+Running 8 tests using 1 worker
+
+  ✓  1 …e.spec.ts:19:9 › Executing the Intergration Case with Contact and Account in Serial mode › 1_Sales Force Access-Token generation (752ms)
+{
+  access_token: '00Dg800000N9lEG!AQEAQG8VTa0my5y7t2wzMpBOy4J8PKKS1bfTv9vEtsBkrWeKjFch9THFLSuMhY4BHRWTzy9qdd8BCHPreOSjPeOuOeKVb7oD',
+  signature: 'B9xkthcNflFsEcvbNlgliIwccjNE7l95O6a+LUKi3is=',
+  scope: 'cdp_ingest_api custom_permissions cdp_segment_api cdp_api content cdp_identityresolution_api chatbot_api interaction_api wave_api cdp_calculated_insight_api einstein_gpt_api id api data_cloud_user_claims eclair_api pardot_api lightning visualforce sfap_api cdp_query_api semantic_layer_api openid cmdb_discovery_api scrt_api cdp_profile_api user_registration_api pwdless_login_api chatter_api mcp_api a2a_api forgot_password',
+  instance_url: 'https://orgfarm-02ae27e8c2-dev-ed.develop.my.salesforce.com',
+  id: 'https://login.salesforce.com/id/00Dg800000N9lEGEAZ/005g800000CO52sAAD',
+  token_type: 'Bearer',
+  issued_at: '1792343330787',
+  api_instance_url: 'https://api.salesforce.com'
+}
+200
+OK
+00Dg800000N9lEG!AQEAQG8VTa0my5y7t2wzMpBOy4J8PKKS1bfTv9vEtsBkrWeKjFch9THFLSuMhY4BHRWTzy9qdd8BCHPreOSjPeOuOeKVb7oD
+Bearer
+https://orgfarm-02ae27e8c2-dev-ed.develop.my.salesforce.com
+  ✓  2 … › Executing the Intergration Case with Contact and Account in Serial mode › 2_Creating a Contact in Sales to intergrate in Sales (1.1s)
+{ id: '003g800000sdWnJAAU', success: true, errors: [] }
+201
+Created
+003g800000sdWnJAAU
+  ✓  3 case.spec.ts:96:9 › Executing the Intergration Case with Contact and Account in Serial mode › 3_Create Account in Sales Force (802ms)
+{ id: '001g8000013u5dtAAA', success: true, errors: [] }
+201
+Created
+001g8000013u5dtAAA
+  ✓  4 case.spec.ts:129:9 › Executing the Intergration Case with Contact and Account in Serial mode › 4_Create Case in Sales Force (757ms)
+{ id: '500g800002UUlTpAAL', success: true, errors: [] }
+201
+Created
+500g800002UUlTpAAL
+     5 case.spec.ts:167:9 › Executing the Intergration Case with Contact and Account in Serial mode › 5_Get the Case request in Sales Force
+{
+  attributes: {
+    type: 'Case',
+    url: '/services/data/v65.0/sobjects/Case/500g800002UUlTpAAL'
+  },
+  Id: '500g800002UUlTpAAL',
+  IsDeleted: false,
+  MasterRecordId: null,
+  CaseNumber: '00001030',
+  ContactId: '003g800000sdWnJAAU',
+  AccountId: '001g8000013u5dtAAA',
+  AssetId: null,
+  SourceId: null,
+  ParentId: null,
+  SuppliedName: null,
+  SuppliedEmail: null,
+  SuppliedPhone: null,
+  SuppliedCompany: null,
+  Type: null,
+  Status: 'New',
+  Reason: null,
+  Origin: 'Phone',
+  Subject: null,
+  Priority: 'Medium',
+  Description: null,
+  IsClosed: false,
+  ClosedDate: null,
+  IsEscalated: false,
+  OwnerId: '005g800000CO52sAAD',
+  CreatedDate: '2026-10-18T17:08:53.000+0000',
+  CreatedById: '005g800000CO52sAAD',
+  LastModifiedDate: '2026-10-18T17:08:53.000+0000',
+  LastModifiedById: '005g800000CO52sAAD',
+  SystemModstamp: '2026-10-18T17:08:53.000+0000',
+  ContactPhone: null,
+  ContactMobile: null,
+  ContactEmail: null,
+  ContactFax: null,
+  Comments: null,
+  LastViewedDate: '2026-10-18T17:08:53.000+0000',
+  LastReferencedDate: '2026-10-18T17:08:53.000+0000',
+  EngineeringReqNumber__c: null,
+  SLAViolation__c: null,
+  Product__c: null,
+  PotentialLiability__c: null
+}
+200
+OK
+  ✓  5 ….spec.ts:167:9 › Executing the Intergration Case with Contact and Account in Serial mode › 5_Get the Case request in Sales Force (456ms)
+  ✓  6 …ec.ts:191:9 › Executing the Intergration Case with Contact and Account in Serial mode › 6_Update the Case request in Sales Force (551ms)
+204
+No Content
+     7 …ts:217:9 › Executing the Intergration Case with Contact and Account in Serial mode › 7_Get the Case request in Sales Force - Post Update
+{
+  attributes: {
+    type: 'Case',
+    url: '/services/data/v65.0/sobjects/Case/500g800002UUlTpAAL'
+  },
+  Id: '500g800002UUlTpAAL',
+  IsDeleted: false,
+  MasterRecordId: null,
+  CaseNumber: '00001030',
+  ContactId: '003g800000sdWnJAAU',
+  AccountId: '001g8000013u5dtAAA',
+  AssetId: null,
+  SourceId: null,
+  ParentId: null,
+  SuppliedName: null,
+  SuppliedEmail: null,
+  SuppliedPhone: null,
+  SuppliedCompany: null,
+  Type: null,
+  Status: 'Escalated',
+  Reason: null,
+  Origin: 'Phone',
+  Subject: null,
+  Priority: 'Medium',
+  Description: null,
+  IsClosed: false,
+  ClosedDate: null,
+  IsEscalated: false,
+  OwnerId: '005g800000CO52sAAD',
+  CreatedDate: '2026-10-18T17:08:53.000+0000',
+  CreatedById: '005g800000CO52sAAD',
+  LastModifiedDate: '2026-10-18T17:08:54.000+0000',
+  LastModifiedById: '005g800000CO52sAAD',
+  SystemModstamp: '2026-10-18T17:08:54.000+0000',
+  ContactPhone: null,
+  ContactMobile: null,
+  ContactEmail: null,
+  ContactFax: null,
+  Comments: null,
+  LastViewedDate: '2026-10-18T17:08:54.000+0000',
+  LastReferencedDate: '2026-10-18T17:08:54.000+0000',
+  EngineeringReqNumber__c: null,
+  SLAViolation__c: null,
+  Product__c: null,
+  PotentialLiability__c: null
+}
+200
+OK
+  ✓  7 … › Executing the Intergration Case with Contact and Account in Serial mode › 7_Get the Case request in Sales Force - Post Update (389ms)
+  ✓  8 case.spec.ts:241:9 › Executing the Intergration Case with Contact and Account in Serial mode › 8_Delete the Case in Sales Force (1.5s)
+204
+No Content
+
+  8 passed (6.8s)
+suganyaapari@Suganyaa-Pari-MacBook-Air HW % 
