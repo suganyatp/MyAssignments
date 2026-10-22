@@ -1,0 +1,45 @@
+% npx playwright test dashboard-SF.spec.ts
+
+Running 1 test using 1 worker
+[Google Chrome] › tests/Week8/Day3/Marathon-3/dashboard-SF.spec.ts:9:5 › Dashboard UI-API Actions in SalesForce page
+Home Page Title :  Lightning Experience | Salesforce
+Dashboard Page Title  : New Dashboard | Salesforce
+The Dashboard is Saved!
+{
+  access_token: '00Dg800000N9lEG!AQEAQELZCv6Sq8Wso_X09V9VdkBZJrQBTKQ3iXWI5y5xf5onQeD84cQ_atmqqUjfxa8LqQMFx.LDRMYEP_Rc7TnT8.Iyi4v1',
+  signature: 'd4eWGILO06bq7TCpI78KGR/8PFFrbg8SvE+fpAczblg=',
+  scope: 'cdp_ingest_api custom_permissions cdp_segment_api content cdp_api interaction_api cdp_identityresolution_api chatbot_api wave_api cdp_calculated_insight_api einstein_gpt_api id data_cloud_user_claims api eclair_api pardot_api lightning visualforce cdp_query_api sfap_api openid semantic_layer_api cmdb_discovery_api scrt_api cdp_profile_api pwdless_login_api user_registration_api mcp_api chatter_api a2a_api forgot_password',
+  instance_url: 'https://orgfarm-02ae27e8c2-dev-ed.develop.my.salesforce.com',
+  id: 'https://login.salesforce.com/id/00Dg800000N9lEGEAZ/005g800000CO52sAAD',
+  token_type: 'Bearer',
+  issued_at: '1792684180926',
+  api_instance_url: 'https://api.salesforce.com'
+}
+200
+OK
+00Dg800000N9lEG!AQEAQELZCv6Sq8Wso_X09V9VdkBZJrQBTKQ3iXWI5y5xf5onQeD84cQ_atmqqUjfxa8LqQMFx.LDRMYEP_Rc7TnT8.Iyi4v1
+Bearer
+200
+OK
+[
+  {
+    attributes: {
+      type: 'Dashboard',
+      url: '/services/data/v65.0/sobjects/Dashboard/01Zg8000004PnCvEAK'
+    },
+    Id: '01Zg8000004PnCvEAK',
+    Title: 'Salesforce Automation by Suganyaa'
+  },
+  {
+    attributes: {
+      type: 'Dashboard',
+      url: '/services/data/v65.0/sobjects/Dashboard/01Zg8000004PmjtEAC'
+    },
+    Id: '01Zg8000004PmjtEAC',
+    Title: 'Salesforce Automation by Suganyaa'
+  }
+]
+Dashboard ID : 01Zg8000004PnCvEAK | Title : Salesforce Automation by Suganyaa
+204
+No Content
+  1 passed (30.6s)
