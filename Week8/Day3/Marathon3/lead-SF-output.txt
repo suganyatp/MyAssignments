@@ -1,0 +1,37 @@
+% npx playwright test leads-SF.spec.ts
+◇ injected env (4) from Data/salesforce-secrets.env
+
+Running 1 test using 1 worker
+◇ injected env (0) from Data/salesforce-secrets.env
+[Google Chrome] › tests/Week8/Day3/Marathon-3/leads-SF.spec.ts:37:5 › Leads API-UI Actions in SalesForce Page
+200
+OK
+{
+  access_token: '00Dg800000N9lEG!AQEAQGm5dCzbDSQaUxepUu7n.838zNq2z2zFCpW6ph.ZucSLRqeSixpMXRKRgMQ.V1OhE7YcjU1ZNLPm7batOCcdVs9BZv6n',
+  signature: 'J1ZSt8O55iWTMuP4ZSPqM7s0qY1yPoS/LXL740HErkg=',
+  scope: 'cdp_ingest_api custom_permissions cdp_segment_api cdp_api content cdp_identityresolution_api interaction_api chatbot_apiwave_api cdp_calculated_insight_api einstein_gpt_api id data_cloud_user_claims api eclair_api pardot_api lightning visualforce cdp_query_api sfap_api semantic_layer_api openid cmdb_discovery_api scrt_api cdp_profile_api pwdless_login_api user_registration_api chatter_api mcp_api a2a_api forgot_password',
+  instance_url: 'https://orgfarm-02ae27e8c2-dev-ed.develop.my.salesforce.com',
+  id: 'https://login.salesforce.com/id/00Dg800000N9lEGEAZ/005g800000CO52sAAD',
+  token_type: 'Bearer',
+  issued_at: '1792760065420',
+  api_instance_url: 'https://api.salesforce.com'
+}
+201
+Created
+{ id: '00Qg800000IRwvBEAT', success: true, errors: [] }
+Created Lead Sys Id : 00Qg800000IRwvBEAT
+204
+No Content
+200
+OK
+The Lead Name : Alex Paul
+Home Page Title :  Lightning Experience
+UI Lead Name  : Alex Paul
+Toast: Lead "Alex Paul" was deleted. Undo
+  1 passed (15.5s)
+
+To open last HTML report run:
+
+  npx playwright show-report
+
+suganyaapari@Suganyaa-Pari-MacBook-Air PW_SEP_WD_2026 %
